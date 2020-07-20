@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pipe2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <tr>
+    <td>{{PI}}</td>
+    <td>DecimalPipe</td>
+    <td>{{PI|number:'3.2-4'}}</td>
+  </tr>
+  <tr>
+    <td>{{porcentaje}}</td>
+    <td>PercentPipe</td>
+    <td>{{porcentaje|percent}}</td>
+  </tr>
+  <tr>
+    <td>{{dinero}}</td>
+    <td>CurrencyPipe</td>
+    <td>{{dinero|currency:'USD':true:'1.1-2'}}</td>
+  </tr>
+  <tr>
+    <td>{{teprometo}}</td>
+    <td>AsyncPipe</td>
+    <td>{{teprometo|async}}</td>
+  </tr>
+  <tr>
+    <td>{{fecha}}</td>
+    <td>DataPipe</td>
+    <td>{{fecha|date:'longDate'}}</td>
+  </tr>
+  <div class="container">
+    <h2>JSON</h2>
+    <pre>
+      {{personas|json}}
+    </pre>
+  </div>
+</ion-content>

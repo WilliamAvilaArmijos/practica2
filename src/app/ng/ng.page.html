@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ng</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <tr *ngFor="let policy of policies; let i=index">
+    <td>Index: {{i}}</td>
+    <td>{{policy.name}}</td>
+  </tr>
+  <tr *ngFor="let policy of policies; let first=first; let last = last">
+    <td>{{policy.name}}</td>
+  </tr>
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>switch</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ul [ngSwitch]="showTasksOf">
+    <li *ngSwitchCase="'Tester'">
+      <ul>
+        <li>Report Bugs</li>
+        <li>Reopen Bugs</li>
+        <li>Chill!</li>
+      </ul>
+    </li>
+    <li *ngSwitchCase="'Developer'">
+      <ul>
+        <li>Code Code Code</li>
+        <li>Bingo</li>
+        <li>Find Coffee!</li>
+      </ul>
+    </li>
+    <li *ngSwitchCase="'Architect'">
+      <ul>
+        <li>Do crazy stuff</li>
+        <li>Cloud mess</li>
+        <li>Stroll!</li>
+      </ul>
+    </li>
+    <li *ngSwitchCase="'Designer'">
+      <ul>
+        <li>Out of worls</li>
+        <li>Really?</li>
+        <li>Draw anything</li>
+      </ul>
+    </li>
+    <li *ngSwitchDefault>
+      <ul>
+        <li>Why you are here?</li>
+      </ul>
+    </li>
+  </ul>
+</ion-content>

@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>nota</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p *ngIf="nota>=5">has aprobado</p>
+  <p *ngIf="nota>=7 && nota<9">notable</p>
+  <p *ngIf="(nota>=9 && asignatura=='matematicas') || (edad==16)">estudia aeronautica</p>
+</ion-content>

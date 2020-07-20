@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pipe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <tr>
+    <td>{{nombre}} </td>
+    <td>UpperCasePipe </td>
+    <td>{{nombre | uppercase}}</td>
+  </tr>
+  <tr>
+    <td>{{nombre}} </td>
+    <td>LowerCasePipe </td>
+    <td>{{nombre | lowercase}}</td>
+  </tr>
+  <tr>
+    <td>{{libro}} </td>
+    <td>TittleCasePipe </td>
+    <td>{{libro | titlecase}}</td>
+  </tr>
+  <tr>
+    <td>{{collection}} </td>
+    <td>SlicePipe </td>
+    <td>{{collection | slice:1:4}}</td>
+  </tr>
+</ion-content>

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +6,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  name = 'Interpolación';
+  img = 'https://thecatapi.com/api/images/get?format=src&type=gif?results_per_page=';
+  nombre:string;
+  edad:number;
+  
+	
+	constructor() {}
+	
+	ngOnInit() {
+	}
 
 }
